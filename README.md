@@ -1,11 +1,3 @@
-[linuxserverurl]: https://linuxserver.io
-[unifihub]: https://hub.docker.com/r/linuxserver/unifi
-[appurl]: https://www.ubnt.com/download/unifi-video/
-[hub]: https://hub.docker.com/r/kc8apf/unifi-video/
-
-# kc8apf/unifi-video
-[![](https://images.microbadger.com/badges/version/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own version badge on microbadger.com")[![](https://images.microbadger.com/badges/commit/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own commit badge on microbadger.com")[![](https://images.microbadger.com/badges/image/kc8apf/unifi-video.svg)](https://microbadger.com/images/kc8apf/unifi-video "Get your own image badge on microbadger.com")[![Docker Pulls](https://img.shields.io/docker/pulls/kc8apf/unifi-video.svg)][hub][![Docker Stars](https://img.shields.io/docker/stars/kc8apf/unifi-video.svg)][hub]
-
 [UniFi® Video][appurl] is a powerful and flexible, integrated IP video management surveillance system designed to work with UniFi® Video Cameras.
 
 ## Usage
@@ -21,7 +13,7 @@ docker create \
   -p 7445:7445 \
   -p 7446:7446 \
   -p 7447:7447 \
-  kc8apf/unifi-video
+  sirius3r/unifi-video
 ```
 
 When started with a blank volume mounted at /config, UniFi Video will typically generate a few errors similar to the following:
@@ -56,7 +48,7 @@ It is based on xenial with s6 overlay, for shell access whilst the container is 
 
 ## Setting up the application
 
-The webui is at https://ip:7443 , setup with the first run wizard.
+The webui is at https://ip:7443 ot http://ip:7080/, setup with the first run wizard.
 
 To adopt a Unifi Camera that isn't showing as unmanaged in the UI:
 
